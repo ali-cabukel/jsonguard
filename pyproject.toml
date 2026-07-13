@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jsonguard"
+version = "0.1.0"
+description = "Validators and repair tools for LLM JSON responses: extract, fix, validate, and self-heal malformed structured output."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Your Name", email = "you@example.com" }
+]
+keywords = ["llm", "json", "structured output", "validation", "repair", "pydantic"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = []
+
+[project.optional-dependencies]
+pydantic = ["pydantic>=2.0"]
+dev = ["pytest>=7.0", "pydantic>=2.0", "build", "twine"]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/jsonguard"
+Issues = "https://github.com/yourusername/jsonguard/issues"
+
+[tool.setuptools.packages.find]
+include = ["jsonguard*"]
