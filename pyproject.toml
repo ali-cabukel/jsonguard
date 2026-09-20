@@ -37,3 +37,7 @@ Issues = "https://github.com/yourusername/jsonguard/issues"
 
 [tool.setuptools.packages.find]
 include = ["jsonguard*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
